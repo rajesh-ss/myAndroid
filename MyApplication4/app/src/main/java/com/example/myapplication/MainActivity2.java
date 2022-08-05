@@ -1,9 +1,12 @@
 package com.example.myapplication;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +25,7 @@ public class MainActivity2 extends AppCompatActivity {
     TextView notUser;
     Button sinin;
     EditText email, psw;
+    private static final String TAG = "Login Activity";
 
 
     
@@ -61,6 +65,9 @@ public class MainActivity2 extends AppCompatActivity {
         //Getting the View object as defined in the customtoast.xml file
         View layout = li.inflate(R.layout.customtoast,(ViewGroup) findViewById(R.id.custom_toast_layout));
 
+        Toast.makeText(this, "____onCreate____", Toast.LENGTH_LONG).show();
+        Log.d(TAG, "-->> onCreate <<--");
+
         notUser.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -84,6 +91,8 @@ public class MainActivity2 extends AppCompatActivity {
                     toast.setGravity(Gravity.CENTER_VERTICAL, 0, -650);
                     toast.setView(layout);//setting the view of custom toast layout
                     toast.show();
+                    Intent in = new Intent(MainActivity2.this, MainActivity4.class);
+                    startActivity(in);
                 }
                 else if(valEm(email.getText().toString()) && !valPsw(psw.getText().toString())){
                     //Toast.makeText(this, "", 2000);
@@ -105,4 +114,67 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
+
+
+
+    @Override
+    protected void onStart() {
+
+        Toast.makeText(this, "____onStart____", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "-->> onStart <<--");
+
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+
+        Toast.makeText(this, "____onResume____", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "-->> onResume <<--");
+        super.onResume();
+
+    }
+
+    @Override
+    protected void onPause() {
+
+        Toast.makeText(this, "____onPause____", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "-->> onPause <<--");
+
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+
+        Toast.makeText(this, " ____onStop____ ", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "-->> onStop <<--" );
+
+        super.onStop();
+    }
+
+    @Override
+    protected void onRestart() {
+
+        Toast.makeText(this, "____onRestart____", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "-->> onRestart <<--");
+
+        super.onRestart();
+    }
+
+    @Override
+    protected void onDestroy() {
+
+        Toast.makeText(this, "____onDestroy____", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "-->> onDestroy <<--");
+
+        super.onDestroy();
+    }
+
+    public void gotoActivity2(View view) {
+        Intent intent = new Intent(this, lifecycle.class);
+        startActivity(intent);
+
+    }
+
 }

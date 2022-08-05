@@ -9,6 +9,7 @@
 
     <ImageView
         android:id="@+id/imageView"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,6 +24,7 @@
         android:layout_width="225dp"
         android:layout_height="74dp"
         android:text="WELCOME"
+        android:fontFamily="sans-serif-black"
         android:textAlignment="center"
         android:textColor="#8C3636"
         android:textSize="90px"
@@ -31,4 +33,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="271dp"
+        android:layout_height="95dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Rajesh\n2147227"
+        android:textAlignment="center"
+        android:textSize="90px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
 </androidx.constraintlayout.widget.ConstraintLayout>

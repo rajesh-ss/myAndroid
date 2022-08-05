@@ -72,4 +72,7 @@
                  the emp_name so initializer block uses
                  the default values and
                  print to the standard output.</string>
+    <string name="motoDes">
+        Moto E20 mobile was launched on 15th September 2021. The phone comes with a 6.50-inch touchscreen display offering a resolution of 720x1600 pixels at a pixel density of 269 pixels per inch (ppi) and an aspect ratio of 20:9. Moto E20 is powered by a 1.6GHz octa-core Unisoc T606 processor. It comes with 2GB of RAM. The Moto E20 runs Android 11 (Go edition) and is powered by a 4000mAh battery.
+    </string>
 </resources>
