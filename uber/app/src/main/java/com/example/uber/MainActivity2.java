@@ -3,7 +3,9 @@ package com.example.uber;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -21,6 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
     HorizontalScrollView horscr;
     ImageButton searchToaster;
     private static final String TAG = "Dashboard";
+    TextView usr;
 
     ScrollView entireScroll;
 
@@ -33,6 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
         Toast.makeText(this, "onCreate Dashboard", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onCreate Dashboard");
 
+        usr = (TextView) findViewById(R.id.usr);
         horscr = (HorizontalScrollView) findViewById(R.id.imgscroll);
         entireScroll = (ScrollView) findViewById(R.id.entireScroll);
         searchToaster = (ImageButton) findViewById(R.id.searchToaster);
@@ -45,7 +50,9 @@ public class MainActivity2 extends AppCompatActivity {
 
         entireScroll.setSmoothScrollingEnabled(true);
         entireScroll.setEdgeEffectColor(Color.YELLOW);
+        Bundle extras = getIntent().getExtras();
 
+        usr.setText(extras.getString("email"));
 
         searchToaster.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +67,59 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     }
+
+    public void emialerSend(View v){
+
+        Intent email = new Intent(Intent.ACTION_SEND);
+        email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "tenzin.yeshi@mca.christuniversity.in"});
+        email.putExtra(Intent.EXTRA_SUBJECT, "history of the ride");
+        email.putExtra(Intent.EXTRA_TEXT, "i am sharing one of the ride histories");
+
+        //need this to prompts email client only
+        email.setType("message/rfc822");
+
+        startActivity(Intent.createChooser(email, "Choose an Email client :"));
+    }
+    public void phoneSend(View v){
+
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("9894442843"));
+
+        startActivity(callIntent);
+
+    }
+    public void whatsupSend(View v){
+
+
+        Intent intent
+                = new Intent(Intent.ACTION_SEND);
+
+        intent.setType("text/plain");
+        intent.setPackage("com.whatsapp");
+
+        // Give your message here
+        intent.putExtra(
+                Intent.EXTRA_TEXT,
+                "hi there ");
+
+        // Checking whether Whatsapp
+        // is installed or not
+        if (intent
+                .resolveActivity(
+                        getPackageManager())
+                == null) {
+            Toast.makeText(
+                            this,
+                            "Please install whatsapp first.",
+                            Toast.LENGTH_SHORT)
+                    .show();
+            return;
+        }
+
+        // Starting Whatsapp
+        startActivity(intent);
+    }
+
 
 
     @Override
