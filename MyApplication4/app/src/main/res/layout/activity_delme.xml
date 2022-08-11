@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".delme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/shakeMe"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I'll change"
+        android:textAlignment="center"
+        android:layout_marginVertical="60px"
+        android:textSize="100px">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_marginVertical="60px"
+        android:backgroundTint="#000"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="click ME"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="100px"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

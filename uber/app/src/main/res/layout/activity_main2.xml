@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entireScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:orientation="horizontal"
+            android:layout_marginTop="100px"
+            >
+
+        <EditText
+
+            android:layout_width="900px"
+            android:layout_height="120px"
+            android:hint="Search here"
+            android:textAlignment="center"
+            >
+
+        </EditText>
+
+            <ImageButton
+
+                android:id="@+id/searchToaster"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="15px"
+                android:background="@android:drawable/ic_menu_search"
+                >
+
+            </ImageButton>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="500px">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="500px"
+                        android:id="@+id/imgscroll"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="1100px"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/offer"
+                    />
+                <ImageView
+                    android:layout_width="1100px"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/offertwo"
+                    />
+
+                    <ImageView
+                        android:layout_width="1100px"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/offerthree"
+                        />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </FrameLayout>
+        <LinearLayout
+            android:id="@+id/pdsd"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#000000"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ph1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="50px"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/hh"
+                    android:layout_width="300px"
+                    android:layout_height="500px"
+                    android:layout_marginRight="60px"
+                    android:src="@drawable/auto"/>
+
+                <LinearLayout
+                    android:id="@+id/pps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:textSize="80px"
+                        android:textColor="#000"
+                        android:letterSpacing="0.2"
+                        android:text="Uber Auto"
+
+                        />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                           android:paddingVertical="30px"
+                            android:orientation="horizontal"
+
+                            >
+
+                            <TextView
+                                android:layout_width="600px"
+                                android:layout_height="match_parent"
+                                android:textSize="60px"
+
+                                android:letterSpacing=".1"
+                                android:textColor="#000"
+
+
+                                android:text="8 Aug\nRs. 0.00\ncancelled"
+                                />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                           android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:layout_width="90px"
+                                android:layout_height="90px"
+
+                                android:background="@drawable/arrowright"
+                                android:scaleType="fitXY">
+
+                            </ImageView>
+                        </RelativeLayout>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sdsd"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#000000"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vfrvg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="50px"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rfg"
+                    android:layout_width="300px"
+                    android:layout_height="500px"
+                    android:layout_marginRight="60px"
+                    android:src="@drawable/auto"/>
+
+                <LinearLayout
+                    android:id="@+id/ihj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:textSize="80px"
+                        android:textColor="#000"
+                        android:letterSpacing="0.2"
+                        android:text="Uber Auto"
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingVertical="30px"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="600px"
+                            android:layout_height="match_parent"
+                            android:textSize="60px"
+
+                            android:letterSpacing=".1"
+                            android:textColor="#000"
+
+
+                            android:text="29 Jul\nRs. 900.00\nKoramangala"
+                            />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:layout_width="90px"
+                                android:layout_height="90px"
+
+                                android:background="@drawable/arrowright"
+                                android:scaleType="fitXY">
+
+                            </ImageView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ss"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#000000"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qqw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="50px"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dd"
+                android:layout_width="300px"
+                android:layout_height="500px"
+                android:layout_marginRight="60px"
+                android:src="@drawable/index"/>
+
+            <LinearLayout
+                android:id="@+id/sss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:textSize="80px"
+                    android:textColor="#000"
+                    android:letterSpacing="0.2"
+                    android:text="Uber Prime"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="30px"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="600px"
+                        android:layout_height="match_parent"
+                        android:textSize="60px"
+
+                        android:letterSpacing=".1"
+                        android:textColor="#000"
+
+
+                        android:text="15 Jul\nRs. 300.00\nChurch street"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="90px"
+                            android:layout_height="90px"
+
+                            android:background="@drawable/arrowright"
+                            android:scaleType="fitXY">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qqq"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#000000"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
