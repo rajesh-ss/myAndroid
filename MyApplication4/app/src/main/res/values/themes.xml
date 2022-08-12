@@ -12,5 +12,17 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+
+
+        <!-- specify shared element transitions -->
+<!--        <item name="android:windowSharedElementEnterTransition">-->
+<!--            @transition/transanim</item>-->
+<!--        <item name="android:windowSharedElementExitTransition">-->
+<!--            @transition/transanim</item>-->
+<!--        <item name="android:windowEnterTransition">@transition/transanim</item>-->
+<!--        <item name="android:windowExitTransition">@transition/transanim</item>-->
     </style>
 </resources>

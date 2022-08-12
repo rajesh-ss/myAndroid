@@ -45,14 +45,14 @@ public class MainActivity2 extends AppCompatActivity {
         View layout = li.inflate(R.layout.customtoast,(ViewGroup) findViewById(R.id.custom_toast_layout));
 
         // scroll effects for both scroll view and horizontal scroll view
-        horscr.setSmoothScrollingEnabled(true);
-        horscr.setEdgeEffectColor(Color.BLACK);
+//        horscr.setSmoothScrollingEnabled(true);
+//        horscr.setEdgeEffectColor(Color.BLACK);
+//
+//        entireScroll.setSmoothScrollingEnabled(true);
+//        entireScroll.setEdgeEffectColor(Color.YELLOW);
+        //Bundle extras = getIntent().getExtras();
 
-        entireScroll.setSmoothScrollingEnabled(true);
-        entireScroll.setEdgeEffectColor(Color.YELLOW);
-        Bundle extras = getIntent().getExtras();
-
-        usr.setText(extras.getString("email"));
+        //usr.setText(extras.getString("email"));
 
         searchToaster.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,12 +82,20 @@ public class MainActivity2 extends AppCompatActivity {
     }
     public void phoneSend(View v){
 
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("9894442843"));
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+        callIntent.setData(Uri.parse("tel:"+"9894442843"));
 
         startActivity(callIntent);
 
     }
+    public void msgSend(View v){
+
+        Intent callIntent = new Intent(Intent.ACTION_SENDTO);
+        callIntent.setData(Uri.parse("sms:"+"1234567890"));
+        startActivity(callIntent);
+
+    }
+
     public void whatsupSend(View v){
 
 

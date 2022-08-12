@@ -37,12 +37,14 @@ public class MainActivity2 extends AppCompatActivity {
     EditText email, psw;
     private static final String TAG = "Login Activity";
     private FirebaseAuth mAuth;
-    TextView egTest;
+    LayoutInflater li;
+    View layout;
 
 
 
 
-    
+
+
     public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
             Pattern.compile("^(.+)@(.+)$",   Pattern.CASE_INSENSITIVE);
 
@@ -76,13 +78,13 @@ public class MainActivity2 extends AppCompatActivity {
         psw = (EditText) findViewById(R.id.psw);
         mAuth = FirebaseAuth.getInstance();
 
-        egTest = (TextView) findViewById(R.id.txtLogin);
 
-        LayoutInflater li = getLayoutInflater();
+
+        li = getLayoutInflater();
         //Getting the View object as defined in the customtoast.xml file
-        View layout = li.inflate(R.layout.customtoast,(ViewGroup) findViewById(R.id.custom_toast_layout));
+        layout = li.inflate(R.layout.customtoast,(ViewGroup) findViewById(R.id.custom_toast_layout));
 
-        Toast.makeText(this, "____onCreate____", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "____onCreate____", Toast.LENGTH_LONG).show();
         Log.d(TAG, "-->> onCreate <<--");
 
         notUser.setOnClickListener(new View.OnClickListener() {
@@ -99,19 +101,21 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                YoYo.with(Techniques.Swing).duration(1000).repeat(1).playOn(egTest);
+
+                Intent in = new Intent(MainActivity2.this, MainActivity4.class);
+                in.putExtra("email", email.getText().toString());
+                startActivity(in);
                 //YoYo.with(Techniques.Swing).duration(1000).repeat(1).playOn(psw);
 
                // Toast.makeText(MainActivity2.this, valEm( email.getText().toString())+"_-_"+valPsw(psw.getText().toString()), Toast.LENGTH_SHORT).show();
 
 
                 if(valEm(email.getText().toString()) && valPsw(psw.getText().toString())){
-                    Toast toast = new Toast(getApplicationContext());
-                    toast.setDuration(Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER_VERTICAL, 0, -650);
-                    toast.setView(layout);//setting the view of custom toast layout
-                    toast.show();
                     //Intent in = new Intent(MainActivity2.this, MainActivity4.class);
+
+
+
+
                     mAuth.signInWithEmailAndPassword(email.getText().toString(), psw.getText().toString()).addOnCompleteListener(MainActivity2.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -152,11 +156,23 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
+
+
+    public void disCustomToast(){
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, -650);
+        toast.setView(layout);//setting the view of custom toast layout
+        toast.show();
+    }
     public void updateUI(FirebaseUser account){
 
         if(account != null){
-            Toast.makeText(this,"You Signed In successfully",Toast.LENGTH_LONG).show();
-            startActivity(new Intent(this,MainActivity5.class));
+           // Toast.makeText(this,"You Signed In successfully",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity2.this, MainActivity4.class);
+            in.putExtra("email", email.getText().toString());
+            startActivity(in);
 
         }else {
             Toast.makeText(this,"You Didnt signed in: invalid email or psw",Toast.LENGTH_LONG).show();

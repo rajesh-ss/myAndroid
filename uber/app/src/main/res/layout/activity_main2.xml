@@ -70,7 +70,7 @@
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="1000px"
+                    android:layout_width="1050px"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/offer"
@@ -177,6 +177,15 @@
                             >
 
                         </ImageButton>
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="msgSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/sms"
+                            >
+
+                        </ImageButton>
                     </LinearLayout>
 
 
@@ -265,6 +274,53 @@
 
                         />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="emialerSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/email"
+                            >
+
+                        </ImageButton>
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="phoneSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/phone"
+                            >
+
+                        </ImageButton>
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="whatsupSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/whatsup"
+                            >
+
+                        </ImageButton>
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="msgSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/sms"
+                            >
+
+                        </ImageButton>
+                    </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -352,6 +408,52 @@
 
                     />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="emialerSend"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/email"
+                        >
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="phoneSend"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/phone"
+                        >
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="whatsupSend"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/whatsup"
+                        >
+
+                    </ImageButton>
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="msgSend"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/sms"
+                        >
+
+                    </ImageButton>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

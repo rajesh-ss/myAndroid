@@ -31,11 +31,13 @@ public class MainActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
         nameDis = (TextView) findViewById(R.id.nameDis);
-        String em;
-        Intent intent=getIntent();
-        em= intent.getStringExtra("email");
 
-        nameDis.setText(em);
+        Bundle extras = getIntent().getExtras();
+        String hh = extras.getString("email");
+
+        //Toast.makeText(this, "Welcome user: "+hh, Toast.LENGTH_LONG).show();
+
+        nameDis.setText(hh);
         //Toast.makeText(this, "onCreate Dashboard", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onCreate Dashboard");
         horscr = (HorizontalScrollView) findViewById(R.id.imgscroll);
@@ -48,10 +50,70 @@ public class MainActivity4 extends AppCompatActivity {
             linearLayout.addView(textView);
         }*/
 
-        horscr.setSmoothScrollingEnabled(true);
-        horscr.setEdgeEffectColor(Color.GREEN);
+        //horscr.setSmoothScrollingEnabled(true);
+        //horscr.setEdgeEffectColor(Color.GREEN);
 
     }
+
+    public void emialerSend(View v){
+
+        Intent email = new Intent(Intent.ACTION_SEND);
+        email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "rajesh.s@mca.christuniversity.in"});
+        email.putExtra(Intent.EXTRA_SUBJECT, "product delivery");
+        email.putExtra(Intent.EXTRA_TEXT, "i am sharing one of the delivery histories");
+
+        //need this to prompts email client only
+        email.setType("message/rfc822");
+
+        startActivity(Intent.createChooser(email, "Choose an Email client :"));
+    }
+    public void phoneSend(View v){
+
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+        callIntent.setData(Uri.parse("tel:"+"8870078094"));
+        startActivity(callIntent);
+
+    }
+    public void msgSend(View v){
+
+        Intent callIntent = new Intent(Intent.ACTION_SENDTO);
+        callIntent.setData(Uri.parse("sms:"+"8870078094"));
+        startActivity(callIntent);
+
+    }
+    public void whatsupSend(View v){
+
+
+        Intent intent
+                = new Intent(Intent.ACTION_SEND);
+
+        intent.setType("text/plain");
+        intent.setPackage("com.whatsapp");
+
+        // Give your message here
+        intent.putExtra(
+                Intent.EXTRA_TEXT,
+                "hi there ");
+
+        // Checking whether Whatsapp
+        // is installed or not
+        if (intent
+                .resolveActivity(
+                        getPackageManager())
+                == null) {
+            Toast.makeText(
+                            this,
+                            "Please install whatsapp first.",
+                            Toast.LENGTH_SHORT)
+                    .show();
+            return;
+        }
+
+        // Starting Whatsapp
+        startActivity(intent);
+    }
+
+
 
     public void goToLifecycle(View v){
         /*Intent in = new Intent(MainActivity4.this, MainActivity5.class);

@@ -465,16 +465,51 @@
                     android:layout_width="match_parent"
                     android:layout_height="100px"
                     android:textSize="80px"
+                    android:fontFamily="sans-serif-black"
                     android:textColor="@color/cmtext"
                     android:letterSpacing="0.2"
                     android:text="MOTO"
 
                     />
-
-                    <ScrollView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="100px"
+                        android:layout_marginVertical="30px"
+                        android:orientation="horizontal"
                         >
+
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="emialerSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/email"
+                            >
+
+                        </ImageButton>
+
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="whatsupSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/whatsapp"
+                            >
+
+                        </ImageButton>
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="goToLifecycle"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/network"
+                            >
+
+                        </ImageButton>
+                    </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
@@ -482,18 +517,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:textSize="40px"
-                        android:letterSpacing=".1"
+                        android:letterSpacing=".2"
+                        android:fontFamily="sans-serif-black"
                         android:textColor="@color/cmtext"
 
                         android:onClick="goToLifecycle"
-                        android:text="Specs:\nprocessor: snapdragon
-                                        \nram: 8gb
-                                        \nrom: 128gb
-                                        \n5G: yes"
+                        android:text="Specs:\n\tprocessor: snapdragon
+                                        \n\tram: 8gb
+                                        \n\trom: 128gb
+                                        \n\t5G: yes"
                         />
 
+
                         </LinearLayout>
-                    </ScrollView>
+
                 </LinearLayout>
 
 
@@ -535,18 +572,59 @@
                     android:textSize="80px"
                     android:letterSpacing="0.2"
                     android:text="Apple"
+                    android:fontFamily="sans-serif-black"
                     android:textColor="#FFF"
                     />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="30px"
+                    >
+
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="emialerSend"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/email"
+                        >
+
+                    </ImageButton>
+
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="whatsupSend"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/whatsapp"
+                        >
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="goToLifecycle"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/network"
+                        >
+
+                    </ImageButton>
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="40px"
-
+                    android:letterSpacing="0.2"
+                    android:fontFamily="sans-serif-black"
                     android:textColor="#FFF"
-                    android:text="Specs:\nprocessor: A1 bionic
-                                        \nram: 2gb
-                                        \nrom: 128gb
-                                        \n5G: yes"
+                    android:text="Specs:\n\tprocessor: A1 bionic
+                                        \n\tram: 2gb
+                                        \n\trom: 128gb
+                                        \n\t5G: yes"
 
                     />
             </LinearLayout>
@@ -557,6 +635,163 @@
 
 
     <!-- </ScrollView> -->
+
+    <LinearLayout
+        android:layout_marginTop="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/sdsfsdgd"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="#000"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/notification"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Notification preferences"
+
+            >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/sddfgf"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="#000"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/gear"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Account Setting"
+
+            >
+
+        </Button>
+        <LinearLayout
+            android:id="@+id/qwer"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="#000"
+            android:onClick="phoneSend"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/callkaro"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Reach by call"
+
+            >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/sdfds"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="#000"
+            android:textAlignment="textStart"
+            android:onClick="emialerSend"
+            android:drawableLeft="@drawable/email"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Reach by mail"
+
+            >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/lopppyp"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="#000"
+            android:textAlignment="textStart"
+            android:onClick="msgSend"
+            android:drawableLeft="@drawable/chat"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Reach by sms"
+
+            >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/lop"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="#000"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/logout"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Logout"
+
+            >
+
+        </Button>
+
+    </LinearLayout>
 
 
 </LinearLayout>
