@@ -52,6 +52,7 @@ public class MainActivity4 extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setAnimation();
         setContentView(R.layout.activity_main4);
@@ -164,10 +165,33 @@ public class MainActivity4 extends AppCompatActivity {
 //        toast.show();
 
 
+    }
 
+    public void weber(View v) {
 
+        Intent in = new Intent(MainActivity4.this, MainActivity6.class);
+        in.putExtra("weburl", "https://gadgets360.com/moto-e20-price-in-india-103971");
+        startActivity(in);
 
     }
+    public void weberapp(View v) {
+
+        Intent in = new Intent(MainActivity4.this, MainActivity6.class);
+        in.putExtra("weburl", "https://gadgets360.com/apple/reviews");
+        startActivity(in);
+
+    }
+
+
+    public void editprofile(View v) {
+
+        Intent in = new Intent(MainActivity4.this, MainActivity5.class);
+        //in.putExtra("weburl", "https://gadgets360.com/apple/reviews");
+        startActivity(in);
+
+    }
+
+
 
     public void emialerSend(View v){
 

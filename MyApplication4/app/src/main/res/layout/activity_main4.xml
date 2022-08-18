@@ -520,6 +520,17 @@
                             >
 
                         </ImageButton>
+
+                        <ImageButton
+
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="weber"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/rightarrow"
+                            >
+
+                        </ImageButton>
                     </LinearLayout>
 
                         <LinearLayout
@@ -622,6 +633,18 @@
                         android:onClick="goToLifecycle"
                         android:layout_marginHorizontal="15px"
                         android:background="@drawable/network"
+                        >
+
+                    </ImageButton>
+
+
+                    <ImageButton
+
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:onClick="weberapp"
+                        android:layout_marginHorizontal="15px"
+                        android:background="@drawable/rightarrow"
                         >
 
                     </ImageButton>
@@ -762,6 +785,34 @@
 
         <LinearLayout
             android:id="@+id/lopppyp"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="@color/bgAll"
+            android:textColor="@color/cmtext"
+
+            android:textAlignment="textStart"
+            android:onClick="editprofile"
+            android:drawableLeft="@drawable/user"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Edit profile"
+
+            >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/ser"
             android:layout_width="match_parent"
             android:layout_height="4px"
             android:background="#F60404"
