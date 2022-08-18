@@ -6,12 +6,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Slide;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -70,6 +75,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        setAnimation();
         setContentView(R.layout.activity_main2);
 
         notUser = (TextView) findViewById(R.id.notUser);
@@ -157,6 +163,25 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
 
+    public void setAnimation() {
+
+        if (Build.VERSION.SDK_INT > 20) {
+            Explode explode = new Explode();
+            Slide slide = new Slide();
+            Slide slide1 = new Slide();
+            //slide.setSlideEdge(Gravity.LEFT);
+            explode.setDuration(3000);
+            explode.setInterpolator(new AccelerateInterpolator());
+            slide1.setDuration(3000);
+            //slide.setInterpolator(new );
+            slide1.setInterpolator(new AccelerateInterpolator());
+            slide.setDuration(3000);
+            //slide.setInterpolator(new );
+            slide.setInterpolator(new DecelerateInterpolator());
+            //getWindow().setExitTransition(slide1);
+            getWindow().setEnterTransition(slide);
+        }
+    }
 
     public void disCustomToast(){
 

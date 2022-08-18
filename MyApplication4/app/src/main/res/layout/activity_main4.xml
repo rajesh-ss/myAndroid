@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@color/bgAll"
+    android:id="@+id/blahh"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 <LinearLayout
@@ -18,7 +19,7 @@
         android:id="@+id/nameDis"
         android:layout_width="match_parent"
         android:layout_height="100px"
-        android:textColor="#fff"
+        android:textColor="@color/cmtext"
         android:text="Welcome: "
         android:textSize="60px"
         >
@@ -53,7 +54,9 @@
                     android:layout_marginBottom="0px"
                     android:padding="0px">
 
+
             <ImageView
+
                 android:layout_width="1060px"
                 android:layout_height="match_parent"
                 android:layout_marginRight="30px"
@@ -120,10 +123,11 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="250px"
-                        android:layout_height="250px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
                         android:layout_margin="30px"
-
+                        android:background="@drawable/bor"
+                        android:padding="10px"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/sam" />
 
@@ -150,10 +154,12 @@
 
                     <ImageView
 
-                        android:layout_width="250px"
-                        android:layout_height="250px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
                         android:layout_margin="30px"
                         android:scaleType="fitXY"
+                        android:background="@drawable/bor"
+                        android:padding="10px"
                         app:srcCompat="@drawable/moto" />
 
                     <TextView
@@ -176,11 +182,13 @@
 
                     <ImageView
 
-                        android:layout_width="250px"
-                        android:layout_height="250px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
                         android:layout_margin="30px"
                         android:scaleType="fitXY"
-                        android:background="#000"
+                        android:background="@drawable/bor"
+                        android:padding="10px"
+
                         app:srcCompat="@drawable/mia" />
 
                     <TextView
@@ -203,10 +211,12 @@
 
                     <ImageView
 
-                        android:layout_width="250px"
-                        android:layout_height="250px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
                         android:layout_margin="30px"
                         android:scaleType="fitXY"
+                        android:background="@drawable/bor"
+                        android:padding="10px"
                         app:srcCompat="@drawable/sd" />
 
                     <TextView
@@ -228,9 +238,11 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="250px"
-                        android:layout_height="250px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
                         android:layout_margin="30px"
+                        android:background="@drawable/bor"
+                        android:padding="10px"
                         app:srcCompat="@drawable/app" />
 
                     <TextView
@@ -252,22 +264,22 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/sdfdf"
-        android:layout_width="match_parent"
-        android:layout_height="4px"
-        android:background="#F60404"
-        android:layout_marginBottom="50px"
-        android:orientation="vertical">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/sdfdf"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="4px"-->
+<!--        android:background="#F60404"-->
+<!--        android:layout_marginBottom="50px"-->
+<!--        android:orientation="vertical">-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
     <TextView
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:background="@drawable/bor"
+
         android:inputType="textCapSentences"
         android:text="SHOP BY PROCESSOR"
         android:fontFamily="sans-serif-black"
@@ -294,7 +306,7 @@
             <LinearLayout
                 android:id="@+id/sskk"
                 android:layout_width="fill_parent"
-                android:background="#000"
+                android:background="@color/bgAll"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -573,7 +585,7 @@
                     android:letterSpacing="0.2"
                     android:text="Apple"
                     android:fontFamily="sans-serif-black"
-                    android:textColor="#FFF"
+                    android:textColor="@color/cmtext"
                     />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -620,7 +632,7 @@
                     android:textSize="40px"
                     android:letterSpacing="0.2"
                     android:fontFamily="sans-serif-black"
-                    android:textColor="#FFF"
+                    android:textColor="@color/cmtext"
                     android:text="Specs:\n\tprocessor: A1 bionic
                                         \n\tram: 2gb
                                         \n\trom: 128gb
@@ -656,7 +668,8 @@
 
             android:layout_width="match_parent"
             android:layout_height="150px"
-            android:backgroundTint="#000"
+            android:backgroundTint="@color/bgAll"
+            android:textColor="@color/cmtext"
             android:textAlignment="textStart"
             android:drawableLeft="@drawable/notification"
             android:fontFamily="sans-serif-black"
@@ -680,7 +693,8 @@
 
             android:layout_width="match_parent"
             android:layout_height="150px"
-            android:backgroundTint="#000"
+            android:backgroundTint="@color/bgAll"
+            android:textColor="@color/cmtext"
             android:textAlignment="textStart"
             android:drawableLeft="@drawable/gear"
             android:fontFamily="sans-serif-black"
@@ -694,6 +708,7 @@
             android:id="@+id/qwer"
             android:layout_width="match_parent"
             android:layout_height="4px"
+
             android:background="#F60404"
             android:layout_marginBottom="50px"
             android:orientation="vertical">
@@ -704,7 +719,8 @@
 
             android:layout_width="match_parent"
             android:layout_height="150px"
-            android:backgroundTint="#000"
+            android:backgroundTint="@color/bgAll"
+            android:textColor="@color/cmtext"
             android:onClick="phoneSend"
             android:textAlignment="textStart"
             android:drawableLeft="@drawable/callkaro"
@@ -730,7 +746,9 @@
 
             android:layout_width="match_parent"
             android:layout_height="150px"
-            android:backgroundTint="#000"
+            android:backgroundTint="@color/bgAll"
+            android:textColor="@color/cmtext"
+
             android:textAlignment="textStart"
             android:onClick="emialerSend"
             android:drawableLeft="@drawable/email"
@@ -755,15 +773,46 @@
 
             android:layout_width="match_parent"
             android:layout_height="150px"
-            android:backgroundTint="#000"
+            android:backgroundTint="@color/bgAll"
             android:textAlignment="textStart"
             android:onClick="msgSend"
+            android:textColor="@color/cmtext"
             android:drawableLeft="@drawable/chat"
             android:fontFamily="sans-serif-black"
             android:letterSpacing="0.2"
             android:text="Reach by sms"
 
             >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/ratings"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="#F60404"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/raters"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:backgroundTint="@color/bgAll"
+            android:textAlignment="textStart"
+
+            android:textColor="@color/cmtext"
+            android:drawableLeft="@drawable/rating"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.2"
+            android:text="Rate us"
+
+            >
+            <!--            android:onClick="disCustomToast"-->
 
         </Button>
 
@@ -780,8 +829,10 @@
 
             android:layout_width="match_parent"
             android:layout_height="150px"
-            android:backgroundTint="#000"
+            android:backgroundTint="@color/bgAll"
             android:textAlignment="textStart"
+            android:textColor="@color/cmtext"
+
             android:drawableLeft="@drawable/logout"
             android:fontFamily="sans-serif-black"
             android:letterSpacing="0.2"

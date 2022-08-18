@@ -56,34 +56,41 @@
         </LinearLayout>
 
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="500px">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="00dp"
+
+            >
 
                     <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="500px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
                         android:id="@+id/imgscroll"
                         >
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="fill_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="1050px"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.5"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/offer"
                     />
                 <ImageView
-                    android:layout_width="1100px"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.5"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/offertwo"
                     />
 
                     <ImageView
-                        android:layout_width="1100px"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.5"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
                         android:src="@drawable/offerthree"
@@ -92,7 +99,7 @@
                         </LinearLayout>
 
                     </HorizontalScrollView>
-                </FrameLayout>
+                </RelativeLayout>
         <LinearLayout
             android:id="@+id/pdsd"
             android:layout_width="match_parent"

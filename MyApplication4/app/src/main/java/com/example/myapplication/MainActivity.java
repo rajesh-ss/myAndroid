@@ -1,10 +1,12 @@
 package com.example.myapplication;
 
+import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -34,9 +36,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+        //getSupportActionBar().setBackgroundDrawable(Color.BLACK);
         setAnimation();
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
+
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -87,19 +91,21 @@ public class MainActivity extends AppCompatActivity {
     public void setAnimation() {
         if (Build.VERSION.SDK_INT > 20) {
             Explode explode = new Explode();
+
+
             Slide slide = new Slide();
             Slide slide1 = new Slide();
             //slide.setSlideEdge(Gravity.LEFT);
-            explode.setDuration(1000);
+            explode.setDuration(3000);
             explode.setInterpolator(new AccelerateInterpolator());
-            slide1.setDuration(1000);
+            slide1.setDuration(3000);
             //slide.setInterpolator(new );
             slide1.setInterpolator(new AccelerateInterpolator());
-            slide.setDuration(1000);
+            slide.setDuration(3000);
             //slide.setInterpolator(new );
             slide.setInterpolator(new DecelerateInterpolator());
-            getWindow().setExitTransition(slide1);
-            getWindow().setEnterTransition(slide);
+            //getWindow().setExitTransition(slide);
+            getWindow().setEnterTransition(explode);
         }
     }
 }

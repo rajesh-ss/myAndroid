@@ -10,13 +10,12 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animer"
         android:layout_width="900px"
-        android:layout_height="900px"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.353"
-
         app:lottie_fileName="ecommercesplash.json"
         app:lottie_loop="true"
         app:lottie_autoPlay="true"
