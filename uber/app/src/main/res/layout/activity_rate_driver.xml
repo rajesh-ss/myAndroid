@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llp"
+    tools:context=".rateDriver">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Rate driver"
+        android:layout_marginVertical="30dp"
+        />
+
+    <RatingBar
+        android:id="@+id/rater"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:hint="feedback"
+        android:layout_marginVertical="30dp"
+        />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="Type of car"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="Sedan"
+                android:textSize="15dp"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="SUV"
+                android:textSize="15dp"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="Hatchback"
+                android:textSize="15dp"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="auto"
+                android:textSize="15dp"
+                />
+        </RadioGroup>
+
+    <Button
+        android:layout_marginVertical="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:backgroundTint="@color/black"
+        android:textColor="#fff"
+        android:text="submit"
+        android:textSize="30dp"
+        android:onClick="submitted"
+        />
+
+</LinearLayout>

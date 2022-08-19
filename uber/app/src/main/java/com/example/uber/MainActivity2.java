@@ -3,6 +3,8 @@ package com.example.uber;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -13,11 +15,16 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -25,8 +32,8 @@ public class MainActivity2 extends AppCompatActivity {
     ImageButton searchToaster;
     private static final String TAG = "Dashboard";
     TextView usr;
+    ScrollView sv;
 
-    ScrollView entireScroll;
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
@@ -37,9 +44,10 @@ public class MainActivity2 extends AppCompatActivity {
         Toast.makeText(this, "onCreate Dashboard", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onCreate Dashboard");
 
+
         usr = (TextView) findViewById(R.id.usr);
         horscr = (HorizontalScrollView) findViewById(R.id.imgscroll);
-        entireScroll = (ScrollView) findViewById(R.id.entireScroll);
+        sv = (ScrollView) findViewById(R.id.entireScroll);
         searchToaster = (ImageButton) findViewById(R.id.searchToaster);
         LayoutInflater li = getLayoutInflater();
         View layout = li.inflate(R.layout.customtoast,(ViewGroup) findViewById(R.id.custom_toast_layout));
@@ -68,6 +76,27 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
+    public void gotoact(View v) {
+
+        Intent in = new Intent(MainActivity2.this, rateDriver.class);
+        //in.putExtra("weburl", "");
+        startActivity(in);
+    }
+
+
+    public void profileMan(View v) {
+
+        Intent in = new Intent(MainActivity2.this, MainActivity3.class);
+        //in.putExtra("weburl", "");
+        startActivity(in);
+    }
+
+
+
+    public void raters(View v) {
+
+    }
+
     public void emialerSend(View v){
 
         Intent email = new Intent(Intent.ACTION_SEND);
@@ -80,6 +109,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         startActivity(Intent.createChooser(email, "Choose an Email client :"));
     }
+
+
     public void phoneSend(View v){
 
         Intent callIntent = new Intent(Intent.ACTION_DIAL);

@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bottomcolorred.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main3.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_rate_driver.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/layout/customtoast.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/get_ratings.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>

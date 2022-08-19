@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">uber</string>
+    <string-array name="states_array">
+        <item>Tamil Nadu</item>
+        <item>Karnataka</item>
+        <item>Telangana</item>
+        <item>Andra pradesh</item>
+        <item>Kerala</item>
+        <item>Rajasthan</item>
+        <item>Gujarat</item>
+        <item>Madya pradesh</item>
+    </string-array>
 </resources>

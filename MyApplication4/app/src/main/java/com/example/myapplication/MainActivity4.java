@@ -38,13 +38,8 @@ public class MainActivity4 extends AppCompatActivity {
     private static final String TAG = "Activity2";
     HorizontalScrollView horscr;
     TextView nameDis;
-
-
     Button btn;
     LayoutInflater li;
-
-
-
     ScrollView layout;
 
 

@@ -14,16 +14,31 @@
         >
 
 
-        <TextView
-            android:id="@+id/usr"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100px"
-            android:layout_marginTop="100px"
-            android:textSize="50px"
-
+            android:orientation="horizontal"
+            android:layout_marginVertical="50dp"
             >
 
-        </TextView>
+            <TextView
+                android:id="@+id/usr"
+                android:layout_width="900px"
+                android:layout_height="100px"
+
+                android:textSize="50px"
+
+                />
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/user"
+                android:onClick="profileMan"
+                />
+        </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,24 +89,22 @@
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_weight="0.5"
-                    android:layout_height="match_parent"
+                    android:layout_width="1000px"
+                    android:layout_height="600px"
+
                     android:scaleType="fitXY"
                     android:src="@drawable/offer"
                     />
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_weight="0.5"
-                    android:layout_height="match_parent"
+                    android:layout_width="1000px"
+                    android:layout_height="600px"
                     android:scaleType="fitXY"
                     android:src="@drawable/offertwo"
                     />
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_weight="0.5"
-                        android:layout_height="match_parent"
+                        android:layout_width="1000px"
+                        android:layout_height="600px"
                         android:scaleType="fitXY"
                         android:src="@drawable/offerthree"
                         />
@@ -190,9 +203,9 @@
                             android:onClick="msgSend"
                             android:layout_marginHorizontal="15px"
                             android:background="@drawable/sms"
-                            >
+                            />
 
-                        </ImageButton>
+
                     </LinearLayout>
 
 
@@ -222,7 +235,7 @@
                             <ImageView
                                 android:layout_width="90px"
                                 android:layout_height="90px"
-
+                                android:onClick="gotoact"
                                 android:background="@drawable/arrowright"
                                 android:scaleType="fitXY">
 
@@ -326,6 +339,7 @@
                             >
 
                         </ImageButton>
+
                     </LinearLayout>
 
 
@@ -460,6 +474,7 @@
                         >
 
                     </ImageButton>
+
                 </LinearLayout>
 
                 <LinearLayout
