@@ -75,7 +75,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setAnimation();
+            setAnimation();
         setContentView(R.layout.activity_main2);
 
         notUser = (TextView) findViewById(R.id.notUser);
