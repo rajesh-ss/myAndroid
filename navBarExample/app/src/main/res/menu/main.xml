@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/ele"
+        android:orderInCategory="100"
+        android:title="Electronics"
+        app:showAsAction="withText" >
+
+        <menu>
+            <item
+                android:id="@+id/mob"
+                android:orderInCategory="100"
+                android:icon="@drawable/smartphone"
+                android:title="mobile"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/lap"
+                android:orderInCategory="100"
+                android:icon="@drawable/laptop"
+                android:title="laptop"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/tablet"
+                android:orderInCategory="100"
+                android:icon="@drawable/tablet"
+                android:title="tablet"
+                app:showAsAction="always" />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/fashion"
+        android:icon="@drawable/clothes"
+        android:orderInCategory="100"
+        android:title="Fashion"
+        app:showAsAction="withText" >
+
+        <menu>
+            <item
+                android:id="@+id/men"
+                android:icon="@drawable/ele"
+                android:orderInCategory="100"
+                android:title="men"
+                app:showAsAction="withText" >
+            </item>
+            <item
+                android:id="@+id/women"
+                android:icon="@drawable/ele"
+                android:orderInCategory="100"
+                android:title="men"
+                app:showAsAction="withText" >
+
+            </item>
+            <item
+                android:id="@+id/kids"
+                android:icon="@drawable/ele"
+                android:orderInCategory="100"
+                android:title="kids"
+                app:showAsAction="withText" >
+
+            </item>
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:orderInCategory="100"
+        android:icon="@drawable/toys"
+        android:title="toys"
+        app:showAsAction="always" />
+
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="withText" />
+
+</menu>

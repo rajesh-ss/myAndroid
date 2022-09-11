@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/java"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="get advise from experts" />
+
+    <item
+        android:id="@+id/kotlin"
+        android:icon="@drawable/settings"
+        android:title="compare with other models" />
+
+    <item
+        android:id="@+id/android"
+        android:icon="@drawable/user"
+        android:title="explore review from original buyers" />
+
+</menu>

@@ -1,44 +1,30 @@
-package com.example.myapplication;
+package com.example.navbarexample;
 
-import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.transition.Explode;
 import android.transition.Slide;
-import android.view.Gravity;
-import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
-
-import org.w3c.dom.Text;
-
-
-public class MainActivity extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     private static int SPLASH_SCREEN_TIME_OUT = 3000;
     TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
         //getSupportActionBar().setBackgroundDrawable(Color.BLACK);
         setAnimation();
         setContentView(R.layout.activity_main);
@@ -56,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this,
-                        MainActivity2.class);
+                Intent i = new Intent(SplashScreen.this,
+                        Login.class);
 
                 // Bundle bd = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle();
-                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(SplashScreen.this).toBundle());
 
                 //startActivity(i);
                 finish();

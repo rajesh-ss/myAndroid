@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgAll"
+    android:id="@+id/blahh"
+    tools:context=".ui.gallery.GalleryFragment"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/nameDis"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:textColor="@color/cmtext"
+            android:text="Welcome: "
+            android:textSize="60px"
+            >
+
+        </TextView>
+
+
+
+        <FrameLayout
+
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="500px">
+
+
+            <HorizontalScrollView
+                android:id="@+id/imgscroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="500px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="0px"
+                    android:padding="0px">
+
+
+                    <ImageView
+                        android:id="@+id/hedMobOne"
+                        android:layout_width="1060px"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/headerbackground" />
+
+                    <ImageView
+                        android:layout_width="1000px"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:layout_marginHorizontal="30px"
+                        android:src="@drawable/mbback" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+
+            android:inputType="textCapSentences"
+            android:text="SHOP BY BRAND"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/cmtext"
+            android:letterSpacing=".1"
+            android:textSize="60px" />
+
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/sdfdf"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="4px"-->
+        <!--        android:background="#F60404"-->
+        <!--        android:layout_marginBottom="50px"-->
+        <!--        android:orientation="vertical">-->
+
+        <!--    </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/pdsd"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:layout_marginBottom="50px"
+            android:background="#F60404"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/oo"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:layout_marginTop="20px"
+
+            android:padding="0px">
+
+
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+
+                android:paddingBottom="0px">
+
+                <LinearLayout
+                    android:id="@+id/kk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_margin="30px"
+                            android:background="@drawable/bor"
+                            android:padding="10px"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/sam" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Samsung"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_margin="30px"
+                            android:background="@drawable/bor"
+                            android:padding="10px"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/moto" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Moto"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_margin="30px"
+                            android:background="@drawable/bor"
+                            android:padding="10px"
+                            android:scaleType="fitXY"
+
+                            app:srcCompat="@drawable/mia" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:fontFamily="sans-serif-black"
+                            android:text="MI"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_margin="30px"
+                            android:background="@drawable/bor"
+                            android:padding="10px"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/sd" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:fontFamily="sans-serif-black"
+                            android:text="oneplus"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_margin="30px"
+                            android:background="@drawable/bor"
+                            android:padding="10px"
+                            app:srcCompat="@drawable/app" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:fontFamily="sans-serif-black"
+                            android:text="apple"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="60px" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:fontFamily="sans-serif-black"
+            android:inputType="textCapSentences"
+            android:letterSpacing=".1"
+            android:text="SHOP BY PROCESSOR"
+            android:textColor="@color/cmtext"
+            android:textSize="60px" />
+
+        <LinearLayout
+
+            android:id="@+id/osso"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+
+            android:layout_marginTop="30px">
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/sskk"
+                    android:layout_width="fill_parent"
+                    android:background="@color/bgAll"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="250px"
+                            android:layout_height="250px"
+                            android:layout_margin="30px"
+                            android:scaleType="fitXY"
+
+                            app:srcCompat="@drawable/snap" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:text="Sandragon"
+                            android:fontFamily="sans-serif-black"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="250px"
+                            android:scaleType="fitXY"
+                            android:layout_margin="30px"
+                            android:layout_marginHorizontal="50px"
+                            app:srcCompat="@drawable/mediaeig" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:text="mediatek"
+                            android:fontFamily="sans-serif-black"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="250px"
+                            android:scaleType="fitXY"
+                            android:layout_margin="30px"
+                            android:layout_marginHorizontal="50px"
+                            app:srcCompat="@drawable/exnos" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:text="exnos"
+                            android:fontFamily="sans-serif-black"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300px"
+                        android:layout_height="400px"
+                        android:baselineAligned="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="250px"
+                            android:layout_margin="30px"
+                            app:srcCompat="@drawable/app"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:text="A1 bionic"
+                            android:fontFamily="sans-serif-black"
+                            android:textAlignment="center"
+                            android:textColor="@color/cmtext"
+                            android:textSize="40px" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <!--
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="500px"
+            tools:layout_editor_absoluteY="-127dp"> -->
+
+        <LinearLayout
+            android:id="@+id/ph1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="50px"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/hh"
+                    android:layout_width="300px"
+                    android:layout_height="500px"
+                    android:src="@drawable/motoch"/>
+
+                <LinearLayout
+                    android:id="@+id/pps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:textSize="80px"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/cmtext"
+                        android:letterSpacing="0.2"
+                        android:text="MOTO"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_marginVertical="30px"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="emialerSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/email"
+                            >
+
+                        </ImageButton>
+
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="whatsupSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/whatsapp"
+                            >
+
+                        </ImageButton>
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="goToLifecycle"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/network"
+                            >
+
+                        </ImageButton>
+
+                        <ImageButton
+
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="weber"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/rightarrow"
+                            >
+
+                        </ImageButton>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="40px"
+                            android:letterSpacing=".2"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="@color/cmtext"
+
+                            android:onClick="goToLifecycle"
+                            android:text="Specs:\n\tprocessor: snapdragon
+                                        \n\tram: 8gb
+                                        \n\trom: 128gb
+                                        \n\t5G: yes"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sdsd"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ph2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="300px"
+                    android:layout_height="500px"
+                    app:srcCompat="@drawable/iphonemaxpro" />
+
+
+                <LinearLayout
+                    android:id="@+id/ppsss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:textSize="80px"
+                        android:letterSpacing="0.2"
+                        android:text="Apple"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/cmtext"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="30px"
+                        >
+
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="emialerSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/email"
+                            >
+
+                        </ImageButton>
+
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="whatsupSend"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/whatsapp"
+                            >
+
+                        </ImageButton>
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="goToLifecycle"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/network"
+                            >
+
+                        </ImageButton>
+
+
+                        <ImageButton
+
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:onClick="weberapp"
+                            android:layout_marginHorizontal="15px"
+                            android:background="@drawable/rightarrow"
+                            >
+
+                        </ImageButton>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="40px"
+                        android:letterSpacing="0.2"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/cmtext"
+                        android:text="Specs:\n\tprocessor: A1 bionic
+                                        \n\tram: 2gb
+                                        \n\trom: 128gb
+                                        \n\t5G: yes"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!-- </ScrollView> -->
+
+        <LinearLayout
+            android:layout_marginTop="60px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/sdsfsdgd"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textColor="@color/cmtext"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/notification"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Notification preferences"
+
+                >
+
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/sddfgf"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textColor="@color/cmtext"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/gear"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Account Setting"
+
+                >
+
+            </Button>
+            <LinearLayout
+                android:id="@+id/qwer"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textColor="@color/cmtext"
+                android:onClick="phoneSend"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/callkaro"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Reach by call"
+
+                >
+
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/sdfds"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textColor="@color/cmtext"
+
+                android:textAlignment="textStart"
+                android:onClick="emialerSend"
+                android:drawableLeft="@drawable/email"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Reach by mail"
+
+                >
+
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/lopppyp"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textColor="@color/cmtext"
+
+                android:textAlignment="textStart"
+                android:onClick="editprofile"
+                android:drawableLeft="@drawable/user"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Edit profile"
+
+                >
+
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/ser"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textAlignment="textStart"
+                android:onClick="msgSend"
+                android:textColor="@color/cmtext"
+                android:drawableLeft="@drawable/chat"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Reach by sms"
+
+                >
+
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/ratings"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+
+                android:id="@+id/raters"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textAlignment="textStart"
+
+                android:textColor="@color/cmtext"
+                android:drawableLeft="@drawable/rating"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Rate us"
+
+                >
+                <!--            android:onClick="disCustomToast"-->
+
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/lop"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#F60404"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:backgroundTint="@color/bgAll"
+                android:textAlignment="textStart"
+                android:textColor="@color/cmtext"
+
+                android:drawableLeft="@drawable/logout"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="Logout"
+
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
