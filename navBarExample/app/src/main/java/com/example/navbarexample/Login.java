@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity {
     Button sinin;
     EditText email, psw;
     private static final String TAG = "Login Activity";
-   // private FirebaseAuth mAuth;
+   private FirebaseAuth mAuth;
     LayoutInflater li;
     View layout;
 
@@ -77,7 +77,7 @@ public class Login extends AppCompatActivity {
         sinin = (Button) findViewById(R.id.sinin);
         email = (EditText) findViewById(R.id.email);
         psw = (EditText) findViewById(R.id.psw);
-     //   mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
 
 
@@ -104,7 +104,7 @@ public class Login extends AppCompatActivity {
 
 
                 Intent in = new Intent(Login.this, MainActivity.class);
-                in.putExtra("email", email.getText().toString());
+//                in.putExtra("email", email.getText().toString());
                 startActivity(in);
                 //YoYo.with(Techniques.Swing).duration(1000).repeat(1).playOn(psw);
 
@@ -112,27 +112,27 @@ public class Login extends AppCompatActivity {
 
 
                 if(valEm(email.getText().toString()) && valPsw(psw.getText().toString())){
-                    //Intent in = new Intent(MainActivity2.this, MainActivity4.class);
+                   //Intent in = new Intent(Login.this, MainActivity.class);
 
 
 
 
-//                    mAuth.signInWithEmailAndPassword(email.getText().toString(), psw.getText().toString()).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//                            if (task.isSuccessful()) {
-//                                // Sign in success, update UI with the signed-in user's information
-//                                Log.d(TAG, "signInWithEmail:success");
-//                                FirebaseUser user = mAuth.getCurrentUser();
-//                                updateUI(user);
-//                            } else {
-//                                // If sign in fails, display a message to the user.
-//                                Log.w(TAG, "signInWithEmail:failure", task.getException());
-//
-//                                updateUI(null);
-//                            }
-//                        }
-//                    });
+                    mAuth.signInWithEmailAndPassword(email.getText().toString(), psw.getText().toString()).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                // Sign in success, update UI with the signed-in user's information
+                                Log.d(TAG, "signInWithEmail:success");
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                updateUI(user);
+                            } else {
+                                // If sign in fails, display a message to the user.
+                                Log.w(TAG, "signInWithEmail:failure", task.getException());
+
+                                updateUI(null);
+                            }
+                        }
+                    });
 
                     //in.putExtra("email", email.getText().toString());
                     //startActivity(in);
@@ -191,7 +191,7 @@ public class Login extends AppCompatActivity {
         if(account != null){
             // Toast.makeText(this,"You Signed In successfully",Toast.LENGTH_LONG).show();
             Intent in = new Intent(Login.this, MainActivity.class);
-            in.putExtra("email", email.getText().toString());
+            //in.putExtra("email", email.getText().toString());
             startActivity(in);
 
         }else {

@@ -14,18 +14,25 @@
         android:theme="@style/Theme.NavBarExample"
         tools:targetApi="31">
         <activity
+            android:name=".NotificationView"
+            android:exported="false" />
+
+        <activity
+            android:name=".recycle"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".signup"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="Ecommerse"
             android:theme="@style/Theme.NavBarExample.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

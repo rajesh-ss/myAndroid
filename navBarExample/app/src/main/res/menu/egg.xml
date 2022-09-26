@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/invisible_item"
+
+        android:alphabeticShortcut="i"
+        android:title="Explore more option" />
+
+    <item android:id="@+id/a_item"
+        android:alphabeticShortcut="a"
+        android:title="get advise from experts" />
+
+    <item android:id="@+id/b_item"
+        android:alphabeticShortcut="a"
+        android:title="chck our great deals" />
+
+
+
+</menu>

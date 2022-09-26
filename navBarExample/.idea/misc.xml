@@ -3,22 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/layout/activity_date_picker.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/activity_exam.xml" value="0.178125" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_notification_view.xml" value="0.178125" />
+        <entry key="app/src/main/res/layout/activity_recycle.xml" value="0.178125" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.21927083333333333" />
-        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_testimonials.xml" value="0.178125" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/layout/customtoast.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/get_ratings.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.42606516290726815" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/testmon.xml" value="0.17708333333333334" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.19375" />
+        <entry key="app/src/main/res/menu/egg.xml" value="0.10208333333333333" />
         <entry key="app/src/main/res/menu/main.xml" value="0.1" />
         <entry key="app/src/main/res/menu/popupmenu.xml" value="0.1" />
       </map>

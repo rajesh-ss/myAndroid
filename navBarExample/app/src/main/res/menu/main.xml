@@ -77,7 +77,12 @@
         android:title="toys"
         app:showAsAction="always" />
 
-
+    <item
+        android:id="@+id/ourratings"
+        android:icon="@drawable/info"
+        android:orderInCategory="100"
+        android:title="information"
+        app:showAsAction="withText" />
 
     <item
         android:id="@+id/action_settings"

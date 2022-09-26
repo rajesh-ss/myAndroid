@@ -511,6 +511,7 @@
 
 
                         <ImageButton
+                            android:id="@+id/moto1Whatsup"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="whatsupSend"
@@ -520,6 +521,7 @@
 
                         </ImageButton>
                         <ImageButton
+                            android:id="@+id/moto1web"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="goToLifecycle"
@@ -530,7 +532,7 @@
                         </ImageButton>
 
                         <ImageButton
-
+                            android:id="@+id/arrowmoto1"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="weber"
@@ -615,17 +617,17 @@
 
 
                         <ImageButton
-                            android:layout_width="100px"
+                            android:layout_width="45dp"
                             android:layout_height="100px"
-                            android:onClick="emialerSend"
                             android:layout_marginHorizontal="15px"
                             android:background="@drawable/email"
-                            >
+                            android:onClick="emialerSend">
 
                         </ImageButton>
 
 
                         <ImageButton
+                            android:id="@+id/apple1whatsup"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="whatsupSend"
@@ -636,6 +638,7 @@
                         </ImageButton>
 
                         <ImageButton
+                            android:id="@+id/apple1web"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="goToLifecycle"
@@ -647,7 +650,7 @@
 
 
                         <ImageButton
-
+                            android:id="@+id/arrowapple1"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="weberapp"
@@ -747,7 +750,7 @@
             </LinearLayout>
 
             <Button
-
+                android:id="@+id/expph"
                 android:layout_width="match_parent"
                 android:layout_height="150px"
                 android:backgroundTint="@color/bgAll"
@@ -774,7 +777,7 @@
             </LinearLayout>
 
             <Button
-
+                android:id="@+id/expmail"
                 android:layout_width="match_parent"
                 android:layout_height="150px"
                 android:backgroundTint="@color/bgAll"
@@ -829,7 +832,7 @@
 
             </LinearLayout>
             <Button
-
+                android:id="@+id/expMsg"
                 android:layout_width="match_parent"
                 android:layout_height="150px"
                 android:backgroundTint="@color/bgAll"
@@ -885,7 +888,7 @@
 
             </LinearLayout>
             <Button
-
+                android:id="@+id/logout"
                 android:layout_width="match_parent"
                 android:layout_height="150px"
                 android:backgroundTint="@color/bgAll"

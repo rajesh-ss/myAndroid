@@ -1,16 +1,28 @@
 package com.example.navbarexample.ui.gallery;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.HorizontalScrollView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
+import android.widget.RatingBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,10 +35,22 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.navbarexample.R;
 import com.example.navbarexample.databinding.FragmentGalleryBinding;
+import com.google.android.material.snackbar.Snackbar;
+
+import java.nio.InvalidMarkException;
 
 public class GalleryFragment extends Fragment {
 
     private FragmentGalleryBinding binding;
+    LinearLayout linearLayout;
+    private static final String TAG = "main";
+    HorizontalScrollView horscr;
+    TextView nameDis;
+    Button btn;
+    LayoutInflater li;
+    ScrollView layout;
+
+    ImageButton moto1Arrow;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -36,8 +60,10 @@ public class GalleryFragment extends Fragment {
 
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+//        registerForContextMenu(root.findViewById(R.id.hedMobOne));  getListView()
+        registerForContextMenu(root.findViewById(R.id.hedMobOne));
 
-       // final TextView textView = binding.textGallery;
+        // final TextView textView = binding.textGallery;
         //galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         return root;
@@ -46,34 +72,27 @@ public class GalleryFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 
-        final ImageView hedMobOne = (ImageView) getView().findViewById(R.id.hedMobOne);
-        LinearLayout pp = (LinearLayout) getView().findViewById(R.id.pp);
-        LinearLayout ph2 = (LinearLayout) getView().findViewById(R.id.ph2);
 
-        //registerForContextMenu(hedMobOne);
-        hedMobOne.setOnClickListener(new View.OnClickListener() {
+        nameDis = (TextView) getView().findViewById(R.id.nameDis);
+        Bundle extras =  getActivity().getIntent().getExtras();
+        String hh = "";
+        //extras.getString("email");
+
+        btn = (Button)  getView().findViewById(R.id.raters);
+        nameDis.setText(hh);
+        //Toast.makeText(this, "onCreate Dashboard", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "onCreate Dashboard");
+        horscr = (HorizontalScrollView) getView().findViewById(R.id.imgscroll);
+
+        moto1Arrow = (ImageButton) getView().findViewById(R.id.moto1Arrow);
+
+        moto1Arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                registerForContextMenu(hedMobOne);
-            }
-        });
-
-        pp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                registerForContextMenu(pp);
-            }
-        });
-
-        ph2.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("RestrictedApi")
-            @Override
-            public void onClick(View view) {
-                // Initializing the popup menu and giving the reference as current context
-                PopupMenu popupMenu = new PopupMenu(getActivity(), ph2);
+                PopupMenu popupMenu = new PopupMenu(getActivity(), moto1Arrow);
 
                 // Inflating popup menu from popup_menu.xml file
-                popupMenu.getMenuInflater().inflate(R.menu.popupmenu, popupMenu.getMenu());
+                popupMenu.getMenuInflater().inflate(R.menu.egg, popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
@@ -83,20 +102,22 @@ public class GalleryFragment extends Fragment {
                     }
                 });
                 // Showing the popup menu
-
-
                 popupMenu.show();
             }
         });
+
+
 
     }
 
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        // you can set menu header with title icon etc
+       super.onCreateContextMenu(menu, v, menuInfo);
 
+        // you can set menu header with title icon etc
+//        menu.add(Menu.NONE, R.id.a_item, Menu.NONE, "Menu A");
+//        menu.add(Menu.NONE, R.id.b_item, Menu.NONE, "Menu B");
 
         switch (v.getId()) {
 
@@ -129,6 +150,16 @@ public class GalleryFragment extends Fragment {
             Toast.makeText(getActivity(), "exchange offer", Toast.LENGTH_SHORT).show();
         }
         return true;
+
+//        switch (item.getItemId()) {
+//            case R.id.a_item:
+//                Log.i("ContextMenu", "Item 1a was chosen");
+//                return true;
+//            case R.id.b_item:
+//                Log.i("ContextMenu", "Item 1b was chosen");
+//                return true;
+//        }
+//        return super.onContextItemSelected(item);
     }
     @Override
     public void onDestroyView() {

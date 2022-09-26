@@ -504,9 +504,10 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 
 
                         <ImageButton
+                            android:id="@+id/moto1Whatsup"
                             android:layout_width="100px"
                             android:layout_height="100px"
-                            android:onClick="whatsupSend"
+
                             android:layout_marginHorizontal="15px"
                             android:background="@drawable/whatsapp"
                             >
@@ -523,10 +524,10 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                         </ImageButton>
 
                         <ImageButton
-
+                            android:id="@+id/moto1Arrow"
                             android:layout_width="100px"
                             android:layout_height="100px"
-                            android:onClick="weber"
+
                             android:layout_marginHorizontal="15px"
                             android:background="@drawable/rightarrow"
                             >
@@ -619,6 +620,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 
 
                         <ImageButton
+                            android:id="@+id/apple1whatsup"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="whatsupSend"
@@ -640,7 +642,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 
 
                         <ImageButton
-
+                            android:id="@+id/apple1Arrow"
                             android:layout_width="100px"
                             android:layout_height="100px"
                             android:onClick="weberapp"
@@ -688,211 +690,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 
             </LinearLayout>
 
-            <Button
 
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textColor="@color/cmtext"
-                android:textAlignment="textStart"
-                android:drawableLeft="@drawable/notification"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Notification preferences"
-
-                >
-
-            </Button>
-
-            <LinearLayout
-                android:id="@+id/sddfgf"
-                android:layout_width="match_parent"
-                android:layout_height="4px"
-                android:background="#F60404"
-                android:layout_marginBottom="50px"
-                android:orientation="vertical">
-
-            </LinearLayout>
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textColor="@color/cmtext"
-                android:textAlignment="textStart"
-                android:drawableLeft="@drawable/gear"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Account Setting"
-
-                >
-
-            </Button>
-            <LinearLayout
-                android:id="@+id/qwer"
-                android:layout_width="match_parent"
-                android:layout_height="4px"
-
-                android:background="#F60404"
-                android:layout_marginBottom="50px"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textColor="@color/cmtext"
-                android:onClick="phoneSend"
-                android:textAlignment="textStart"
-                android:drawableLeft="@drawable/callkaro"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Reach by call"
-
-                >
-
-            </Button>
-
-            <LinearLayout
-                android:id="@+id/sdfds"
-                android:layout_width="match_parent"
-                android:layout_height="4px"
-                android:background="#F60404"
-                android:layout_marginBottom="50px"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textColor="@color/cmtext"
-
-                android:textAlignment="textStart"
-                android:onClick="emialerSend"
-                android:drawableLeft="@drawable/email"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Reach by mail"
-
-                >
-
-            </Button>
-
-            <LinearLayout
-                android:id="@+id/lopppyp"
-                android:layout_width="match_parent"
-                android:layout_height="4px"
-                android:background="#F60404"
-                android:layout_marginBottom="50px"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textColor="@color/cmtext"
-
-                android:textAlignment="textStart"
-                android:onClick="editprofile"
-                android:drawableLeft="@drawable/user"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Edit profile"
-
-                >
-
-            </Button>
-
-            <LinearLayout
-                android:id="@+id/ser"
-                android:layout_width="match_parent"
-                android:layout_height="4px"
-                android:background="#F60404"
-                android:layout_marginBottom="50px"
-                android:orientation="vertical">
-
-            </LinearLayout>
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textAlignment="textStart"
-                android:onClick="msgSend"
-                android:textColor="@color/cmtext"
-                android:drawableLeft="@drawable/chat"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Reach by sms"
-
-                >
-
-            </Button>
-
-            <LinearLayout
-                android:id="@+id/ratings"
-                android:layout_width="match_parent"
-                android:layout_height="4px"
-                android:background="#F60404"
-                android:layout_marginBottom="50px"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-
-            <Button
-
-                android:id="@+id/raters"
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textAlignment="textStart"
-
-                android:textColor="@color/cmtext"
-                android:drawableLeft="@drawable/rating"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Rate us"
-
-                >
-                <!--            android:onClick="disCustomToast"-->
-
-            </Button>
-
-            <LinearLayout
-                android:id="@+id/lop"
-                android:layout_width="match_parent"
-                android:layout_height="4px"
-                android:background="#F60404"
-                android:layout_marginBottom="50px"
-                android:orientation="vertical">
-
-            </LinearLayout>
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="150px"
-                android:backgroundTint="@color/bgAll"
-                android:textAlignment="textStart"
-                android:textColor="@color/cmtext"
-
-                android:drawableLeft="@drawable/logout"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="Logout"
-
-                >
-
-            </Button>
 
         </LinearLayout>
 

@@ -26,16 +26,13 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //getSupportActionBar().hide();
         //getSupportActionBar().setBackgroundDrawable(Color.BLACK);
-        setAnimation();
-        setContentView(R.layout.activity_main);
+        //setAnimation();
+        setContentView(R.layout.activity_splash_screen);
 
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //This method is used so that your splash activity
-        //can cover the entire screen.
 
-        setContentView(R.layout.activity_main);
         tv = (TextView) findViewById(R.id.textView3);
         //this will bind your MainActivity.class file with activity_main.
 
